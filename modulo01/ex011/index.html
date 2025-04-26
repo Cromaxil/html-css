@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <!--Tipo de conjunto de mídia de imagem-->
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="Image/png">
+
+        <img src="img/foto-g.png" alt="Imagem flexivel">
+    </picture>
+<!--como colocar audio-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML</p>
+    <!--<audio src="midia/Forro do Farol - Quincas Moreira.mp3" controls autoplay></audio>--><!-- MP3, WAV, OGG -->
+
+    <audio preload="metadata" controls loop><!-- audio no source compatibilidade com mpeg, ogg, wav-->
+        <source src="midia/Forro do Farol - Quincas Moreira.mp3" type="audio/mpeg">
+
+        <source src="midia/Forro do Farol - Quincas Moreira.ogg" type="audio/ogg">
+
+        <source src="midia/Forro do Farol - Quincas Moreira.wav" type="audio/wav">
+        
+        <p>seu audio não é compativel com o navegador</p>
+    </audio>
+</body>
+</html>
