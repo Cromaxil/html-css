@@ -45,7 +45,7 @@ section {
 section p {
     font-family: "Winky Rough", sans-serif;
     font-weight: 400;
-    font-size: 5vw;
+    font-size: 10dvh;
     line-height: 15vh;
     text-align: left;
     font-variant: small-caps;
