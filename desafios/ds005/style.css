@@ -53,6 +53,7 @@ section p {
     padding: 15px;
 
     max-width: 710px;
+    min-width: 320px;
 }
 section.normal {
     background-color: white;
