@@ -9,7 +9,7 @@
 }
 body {
     height: 100dvh;
-    width: 100dvw;
+    width: 100%;
     background-color: darkgrey;
 }
 
@@ -20,16 +20,16 @@ body {
     padding: 30px;
 }
 .topo > h1 {
-    font: normal 400 10vw "Bebas Neue", sans-serif;
+    font: normal 400 10dvw "Bebas Neue", sans-serif;
     padding-top: 30px;
     font-variant: small-caps;
 }
 .topo > h2 {
-    font: normal 400 1vw "Bebas Neue", sans-serif;
+    font: normal 400 1dvw "Bebas Neue", sans-serif;
     padding-bottom: 30px;
 }
 .topo > h2 a {
-    font: normal 400 2.7vw "Bebas Neue", sans-serif;
+    font: normal 400 2.7dvw "Bebas Neue", sans-serif;
     text-decoration: none;
     color: white;
     margin-left: 5px;
@@ -40,20 +40,19 @@ body {
 
 /*CORPO DO SITE*/
 section {
-    padding: 50px;
+    padding: 10vh 0px 10vh 30px;
+    font-size: 3.5vw;
 }
 section p {
     font-family: "Winky Rough", sans-serif;
     font-weight: 400;
-    font-size: 12dvh;
-    /* font-size: 8dvw; */
-    line-height: 15vh;
+    line-height: 3em;
     text-align: left;
     font-variant: small-caps;
 
     padding: 15px;
 
-    max-width: 710px;
+    max-width: 720px;
     min-width: 320px;
 }
 section.normal {
