@@ -39,15 +39,17 @@ body {
 
 /*CORPO DO SITE*/
 section {
-    padding: 10vh 3vw 10vh 3vw;
-    font-size: 3.5vw;
+    padding: 10vh 3vw 10vh 6vw;
+    font-size: 3.8vw;
     line-height: 2em;
 }
 section p {
     font-family: "Winky Rough", sans-serif;
-    font-weight: 400;
+    font-weight: bolder;
     text-align: left;
     font-variant: small-caps;
+
+    max-width: 600px;
 
 }
 section.normal {
