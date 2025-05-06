@@ -8,8 +8,7 @@
     box-sizing: border-box;
 }
 body {
-    height: 100dvh;
-    width: 100%;
+    min-height: 100dvh;
     background-color: darkgrey;
 }
 
@@ -40,26 +39,23 @@ body {
 
 /*CORPO DO SITE*/
 section {
-    padding: 10vh 0px 10vh 30px;
+    padding: 10vh 3vw 10vh 3vw;
     font-size: 3.5vw;
+    line-height: 2em;
 }
 section p {
     font-family: "Winky Rough", sans-serif;
     font-weight: 400;
-    line-height: 3em;
     text-align: left;
     font-variant: small-caps;
 
-    padding: 15px;
-
-    max-width: 720px;
-    min-width: 320px;
 }
 section.normal {
     background-color: white;
     color: black;
 }
 section.imagen p {
+
     background-color: rgba(0, 0, 0, 0.2);
     color: rgb(255, 255, 255);
 
