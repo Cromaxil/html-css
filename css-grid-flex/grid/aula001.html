@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID LAYOUTS</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0 1%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #fbd4d4;
+        }
+        nav {
+            background-color: #99d8ff;
+        }
+        section {
+            background-color: #eaffbd;
+        }
+        article {
+            background-color: #7fffd4;
+        }
+        footer {
+            background-color: #f5dcf3;
+        }
+
+        /*FORMATAÇÃO DO FLEXBOX*/
+        .grid-wrapper > *,
+        .grid-wrapper > 
+        main > * {
+            min-height: 100px;
+            border-radius: 4px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        /*FORMATAÇÃO DO GRID LAYOUT*/
+
+        /*REPEAT(ITEM, TAMANHO)*/
+        /*ItemGrid 1 / 5 incio / final*/
+        .grid-wrapper {
+            display: grid; /*Tipo de display*/
+            /* grid-auto-rows: 100px; Esta propriedade afeta apenas linhas com tamanho não definido. */
+            /*grid-template-columns: 240px repeat(3, 1fr);Colunas*/
+            grid-template-rows: repeat(4, auto); /*Linhas */
+            grid-template-columns: 240px 1fr;
+
+            gap: 0.5em;
+        }
+
+        header {
+            grid-column: 1 / -1;
+            /* grid-row: 1 / 2; */
+            grid-row: 1;
+        }
+        nav {
+            /* grid-row: 2 / 5; */
+            grid-row: 2 / -2;
+        }
+        section {
+            grid-column: 2 / -1;
+        }
+
+        .grid-wrapper > main {
+            background-color: #d3d3d3;
+
+            display: grid;
+            grid-auto-rows: auto;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5vw;
+            padding: 5px;
+        }
+
+        .grid-wrapper > main > article {
+            min-height: 100px;
+            border-radius: 4px;
+        }
+
+        footer {
+            grid-column: 1 / -1;
+            grid-row: -2 / -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-wrapper">
+
+        <header>Header</header>
+
+        <nav>Nav</nav>
+
+        <section>Section</section>
+
+            <main>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+                <article>Article</article>
+            </main>
+
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
