@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        table >tr, th,td {
+            border: 1px solid black;
+        }
+        td, th {
+            padding: 5px 20px;;
+        }
+        
+
+        .nome {
+            background-color: aqua;
+        }
+        .sexo {
+            background-color: rgb(255, 127, 127);
+        }
+    </style>
+
+</head>
+<body>
+    <table>
+
+            <colgroup>
+            
+            <col class="nome" span="1">
+            <col class="idade">
+            <col class="sexo">
+            <col class="cidade">
+
+            </colgroup>
+
+        <caption>Agrupamento de colunas</caption>
+        <tr>
+            <th scope="colgroup">Nome</th>
+            <th scope="colgroup">Idade</th>
+            <th scope="colgroup">Sexo</th>
+            <th scope="colgroup">Cidade</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>40</td>
+            <td>F</td>
+            <td>São Paulo</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>45</td>
+            <td>M</td>
+            <td>Rio de Janeiro</td>
+        </tr>
+        <tr>
+            <td>José</td>
+            <td>50</td>
+            <td>M</td>
+            <td>São Paulo</td>
+        </tr>
+        <tr>
+            <td>Marta</td>
+            <td>40</td>
+            <td>F</td>
+            <td>Ceára</td>
+        </tr>
+
+    </table>
+</body>
+</html>
