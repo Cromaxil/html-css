@@ -21,11 +21,17 @@
 
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
 
             position: sticky;
             top: 0;
             left: 0;
+        }
+        input {
+            padding: 8px;
+            min-width: 300px;
+            border-radius: 20px;
         }
         .cab a {
             background-color: #b2b1b1;
@@ -34,14 +40,20 @@
             text-decoration: none;
             color: #ffffff;
             text-shadow: 0px 0px 2px #000000;
+            font-size: 16px 2vw;
+        }
+        @media {
+        
         }
 
     </style>
 </head>
-<body>
+<body> 
     <header class="cab">
 
         <h1>Teste de FlexBox 01</h1>
+
+        <input type="search" name="Buscar" id="">
         <nav>
             <a href="">Link 01</a>
             <a href="">Link 02</a>
