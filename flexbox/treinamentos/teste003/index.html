@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .pai {
+            max-width: 700px;
+            min-height: 90vh;
+            margin: 20px auto;
+            border: 5px dashed black;
+
+            /*Flex Box*/
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .filho {
+            background-color: aliceblue;
+            padding: 5px;
+
+            flex-grow: 1;
+
+        }
+        .filho-01 {
+            background-color: aqua;
+        }
+
+        .filho-02 {
+            background-color: brown;
+            margin: -20;
+            padding: -10;
+
+            /*Conf FlexBox No Filho do Filho*/
+            
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .neto {
+            margin: 0px;
+            min-width: 200px;
+            min-height: 200px;
+            
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+        }
+        .neto-01 {
+            background-color: aqua;
+
+            
+        }
+        .neto-02 {
+            background-color: black;
+            color: white;
+        }
+        .neto-03 {
+            background-color: blue;
+            flex-grow: 6;
+        }
+        .neto-04 {
+            background-color: azure;
+        }
+        .neto-05 {
+            background-color: burlywood;
+        }
+
+        .filho-03 {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pai">
+
+        <div class="filho filho-01">Filho 01</div>
+
+        <div class="filho filho-02">
+            <div class="neto neto-01">Neto 01</div>
+            <div class="neto neto-02">Neto 02</div>
+            <div class="neto neto-03">Neto 03</div>
+            <div class="neto neto-04">Neto 04</div>
+            <div class="neto neto-05">Neto 05</div>
+        </div>
+
+        <div class="filho filho-03">Filho 03</div>
+
+    </div>
+</body>
+</html>
