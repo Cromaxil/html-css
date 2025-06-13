@@ -11,41 +11,46 @@
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
             
-            max-width: 100vw;
+            width: 100vw;
             height: 100%;
+            max-width: 100vw;
         }
-        fieldset {
-            padding: 10px;
-            border-radius: 10px;
-        }
-        legend {
-            font-variant: small-caps;
-            font-weight: 900;
-        }
-        label {
-            font-variant: small-caps;
-            margin-right: 15px;
-        }
-        fieldset#cadastro {
-            max-width: 600px;
-
+        .form {
+            margin: auto;
+            max-width: 550px;
+            min-width: 320px;
+            
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
-            flex-wrap: wrap;
-
         }
-        #nome,#endereco {
-            max-width: 500px;
-            flex-grow: ;
+        .form fieldset {
+            border-radius: 10px;
+        }
+        .form fieldset > input {
+            padding: 5px;
+            border-radius: 5px;
+
+            max-width: 350px;
+            /* min-width: 320px; */
+        }
+        .form fieldset #nome {
             display: flex;
             flex-direction: column;
         }
-        /* input {
-            width: 250px;
-        } */
+        .form fieldset #nome > label {
+            font-size: .9rem;
+            text-transform: uppercase;
+        }
+        .form fieldset #nome > #inasc {
+            max-width: 100px;
+        }
+        fieldset #endereco {
+            display: flex;
+            flex-direction: column;
+        }
+
     </style>
 </head>
 <body>
@@ -60,11 +65,11 @@
                 <fieldset id="nome">
                     <legend>Dados pessoal</legend>
                     <label for="inome">Nome Completo</label>
-                        <input type="text" name="nome" id="inome" minlength="20" maxlength="50" size="30">
+                        <input type="text" name="nome" id="inome" minlength="20" maxlength="50" size="20">
                     
 
                     <label for="inasc">Data de Nascimento</label>
-                        <input type="date" name="nasc" id="inasc">
+                        <input type="date" name="nasc" id="inasc" required>
                 
                     
                     <label for="icont">Contato</label>
@@ -81,7 +86,7 @@
                     <input type="number" name="cep" id="icep">
 
                     <label for="iend">Endereço</label>
-                    <input type="text" name="end" id="iend">
+                    <input type="text" name="end" id="iend" minlength="20" maxlength="50" size="30">
                     
                     <label for="inum">Numero</label>
                     <input type="number" name="num" id="inum">
